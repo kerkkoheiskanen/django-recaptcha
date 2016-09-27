@@ -1,4 +1,7 @@
-import json
+try:
+    import json
+except ImportError:
+    import simplejson as json
 
 from django.conf import settings
 from django.template.loader import render_to_string
